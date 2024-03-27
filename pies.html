@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+  <meta charset="utf-8">
+  <title>Οι Πίτες του Πίτου</title>
+</head>
+
+<body>
+  <header>
+    <h2><a href="index.html">Οι Πίτες του Πίτου</a></h2>
+    <p>Πάρε μου μια...πίτα!</p>
+    <nav>
+      <ul>
+        <li><a href="store.html">Κατάστημα</a></li>
+        <li><a href="pies.html">Πίτες</a></li>
+        <li><a href="contact.html">Επικοινωνία</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Οι Πίτες</h1>
+    <article>
+      <h2>Οι πίτες μας</h2>
+      <table>
+        <tr>
+          <td ><img src="images/spanakopita.jpg" alt="Spanakopita"></td>
+          <td>Σπανακόπιτα</td>
+          <td>4 €</td>
+        </tr>
+        <tr>
+          <td><img src="images/manitaropita.jpg" alt="Manitaropita"></td>
+          <td>Μανιταρόπιτα</td>
+          <td>5.5 €</td>
+        </tr>
+        <tr>
+          <td><img src="images/prasopita.jpg" alt="Prasopita"></td>
+          <td>Πρασόπιτα</td>
+          <td>3.5 €</td>
+        </tr>
+        <tr>
+          <td><img src="images/boureki.jpg" alt="boureki"></td>
+          <td>Μπουρέκι</td>
+          <td>4.5 €</td>
+        </tr>
+      </table>
+    </article>
+    <form action="/sendata" method="POST">
+      <fieldset>
+        <legend>Πληροφορίες Παράδοσης:</legend>
+        <label for="txtName">Ονοματεπώνυμο:</label>
+        <input type="text" id="txtName" name="name" maxlength="40" size="40" required>(*)<br>
+        <label for="txtAddress">Διεύθυνση (Οδός-Αριθμός):</label>
+        <input type="text" id="txtAddress" name="address" maxlength="50" size="50" required>(*)<br>
+        <label for="slArea">Περιοχή:</label>
+        <select id="slArea" name="area">
+          <option value="nope" selected>...</option>
+          <option value="ampelokipi">Αμπελόκηποι</option>
+          <option value="kentro">Κέντρο</option>
+          <option value="martiou">Μαρτίου</option>
+          <option value="neapoli">Νεάπολη</option>
+          <option value="sikies">Συκιές</option>
+          <option value="charilaou">Χαριλάου</option>
+        </select><br>
+        <label for="txtEmail">E-mail:</label>
+        <input type="email" id="txtEmail" name="email" size="30"><br>
+        <label for="txtTel">Τηλέφωνο:</label>
+        <input type="tel" id="txtTel" name="tel" size="15" required>(*)<br>
+        <label for="txtInfo">Ειδικές Πληροφορίες για την Παράδοση:</label><br>
+        <textarea id="txtInfo" name="info" cols="40" rows="6" placeholder="Οποιαδήποτε πληροφορία θα βοηθήσει στην γρηγορότερη παράδοση"></textarea><br>
+        (*) Τα πεδία είναι υποχρεωτικά
+      </fieldset>
+      <fieldset>
+        <legend>Παραγγελία:</legend>
+        <p></p>
+        <ul>
+          <li>
+        <label for="txtSpanaki">Σπανακόπιτες:</label>
+        <input type="number" id="txtSpanaki" name="spanaki" min="0" max="10" value="0">
+      </li>
+      <li>
+        <label for="txtManitari">Μανιταρόπιτες:</label>
+        <input type="number" id="txtManitari" name="manitari" min="0" max="10" value="0">
+      </li>
+      <li>
+        <label for="txtPrassopita">Πρασόπιτες:</label>
+        <input type="number" id="txtPrassopita" name="prasopita" min="0" max="10" value="0">
+      </li>
+      <li>
+        <label for="txtBoureki">Μπουρέκια:</label>
+        <input type="number" id="txtBoureki" name="boureki" min="0" max="10" value="0">
+      </li>
+      </ul>
+        <input type="checkbox" id="chkOffer" name="offer" value="offerOn">
+        <label for="chkOffer">Ενσωμάτωση προσφοράς στις 10 πίτες η μία δώρο</label>
+      </fieldset>
+      <fieldset>
+        <legend>Τρόπος Πληρωμής:</legend>
+        <input type="radio" id="rbVisa" name="payment" value="visa" checked>
+    <label for="rbVisa">VISA</label>
+    <input type="radio" id="rbCash" name="payment" value="cash">
+    <label for="rbCash">Μετρητά</label>
+    <input type="radio" id="rbCom" name="payment" value="commodity">
+    <label for="rbCom">Είδος</label>
+      </fieldset>
+      <input type="submit" value="Αποστολή">
+      <input type="reset" value="Καθαρισμός">
+    </form>
+  </main>
+
+  <aside>
+    <h2>Προσφορές</h2>
+    <p>Giveaway 1: Στις 10 η μία δώρο</p>
+  </aside>
+
+  <footer>
+
+    <p>&copy; Οι Πίτες του Πίτου 2023</p>
+  </footer>
+</body>
+
+</html>

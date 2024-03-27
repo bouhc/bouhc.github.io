@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+  <meta charset="utf-8">
+  <title>Οι Πίτες του Πίτου</title>
+</head>
+
+<body>
+    <header>
+        <h2><a href="index.html">Οι Πίτες του Πίτου</a></h2>
+        <p>Πάρε μου μια...πίτα!</p>
+        <nav>
+          <ul>
+            <li><a href="store.html">Κατάστημα</a></li>
+            <li><a href="pies.html">Πίτες</a></li>
+            <li><a href="contact.html">Επικοινωνία</a></li>
+          </ul>
+        </nav>
+      </header>
+
+  <main>
+    <form action="\submit" method="POST">
+    <article>
+    <h1>Επικοινωνία</h1>
+    <label for="txtName">Ονοματεπώνυμο:</label>
+    <input type="text" id="txtName" name="name" placeholder="Εισάγετε ονοματεπώνυμο" minlength="3" maxlength="40" size="45">(*)<br>
+     <label for="txtEmail">E-mail:</label> 
+     <input type="email" id="txtEmail" name="email" placeholder="Εισάγετε το e-mail σας" size="40">(*)<br>
+     <label for="txtTel">Τηλέφωνο:</label> 
+     <input type="tel" id="txtTel" name="tel" placeholder="Εισάγετε το τηλέφωνό σας" size="20">(*)<br>
+     <label for="txtMessage">Μήνυμα:</label> 
+     <textarea id="txtMessage" cols="40" rows="6"></textarea>(*)<br>
+      (*) Τα πεδία είναι υποχρεωτικά<br>
+      <input type="submit" value="Αποστολή">
+      <input type="reset" value="Καθαρισμός">
+    </article> 
+  </form>     
+  </main>
+
+  <aside>
+    <h2>Προσφορές</h2>
+    <p>Giveaway 1: Στις 10 η μία δώρο</p>
+  </aside>
+
+  <footer>
+    
+    <p>&copy; Οι Πίτες του Πίτου 2023</p>
+  </footer>
+</body>
+
+</html>
