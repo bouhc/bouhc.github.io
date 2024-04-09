@@ -1,0 +1,41 @@
+body { font-size: 14px;
+}
+
+body a{
+    text-decoration-line: none; 
+}
+
+p {  
+}
+
+header :nth-child(2){font-family: 'Roboto';
+    font-size: 14px;
+    font-stretch: normal;
+font-weight: normal;}
+
+.hype{font-family: 'Roboto Condensed';
+    font-weight:bold;
+    font-size: 26px;
+    text-align: center;
+    
+    color: rgb(32,32,32);
+}
+
+.hype-category{font-family: 'Roboto Condensed';
+    font-weight:bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgb(118,118,118);
+}
+
+.description{color:rgb(21,21,21);
+    font-family: 'Roboto';
+    font-weight:bold;
+    font-size: 14px;
+    line-height: 1.1;
+}
+#id {
+    
+}
+
