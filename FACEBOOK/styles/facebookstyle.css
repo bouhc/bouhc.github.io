@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Segoe UI Historic';
+    src: url("/fonts/Segoe ui historic.ttf");
+}
+
+:root{font-family: 'Segoe UI Historic',sans-serif;
+    font-size: 16px;
+    --color-black:rgb(5,5,5);
+    --color-grey:rgb(101,103,107);
+}
+
+.post {    
+    max-width: 500px;
+    margin: auto;
+    border: 1px black solid;
+    font-size: 15px;
+    color: var(--color-black);
+  }
+  .icon_user, .icon_verified, .icon_public,
+  .social-bar-stats img, .social-bar-react img{
+    width: 30px;
+  }
+
+.post h2{font-weight: bold;
+}
+header.p{font-size: 18px;
+}
