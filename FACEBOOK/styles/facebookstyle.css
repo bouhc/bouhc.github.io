@@ -23,5 +23,42 @@
 
 .post h2{font-weight: bold;
 }
-header.p{font-size: 18px;
+.post
+
+.post-description{
+  line-height: 20px;
 }
+.post a.link-to-page h3{
+  font-weight: normal;
+}
+
+header p{
+  line-height: 20px;
+  font-size: 13px;
+  color: var(--color-grey);
+}
+
+h3{
+    font-size: 13px;
+}
+
+a{
+  color: var(--color-black);
+  text-decoration-line: none; 
+}
+.title{
+  font-size: 17px;
+  font-weight: bold;
+}
+.social-bar-stats span{
+  color: var(--color-grey);
+  font-size: 14px;
+}
+.social-bar-react span {
+  font-size: 15px;
+  font-weight: bold;
+color: var(--color-grey);
+}
+.comments p {
+  font-weight: bold;}
+.comments span { font-size: 12px;}
