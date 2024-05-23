@@ -10,12 +10,17 @@
 <body>
     <script type="text/javascript">
         "use strict"
-        let array = [1, 2, 3, 4, 5];
-let [x, y] = array;
-console.log(x, y);
-array=[1];[x,y]=array;
-console.log(x,y, array);
-</script>
+        let array = [];
+        for (let i = 0; i < 10; i++)
+            array[i] = Math.floor(Math.random(0, 101) * 101);
+        console.log(array);        
+        array.sort();
+        console.log(array);        
+        let sum = 0;
+        for (let i = 0; i < array.length; i++)
+            sum += array[i];
+        console.log(`Μ.Ο. of [${array.join(", ")}] is : ${sum / array.length}`);
+    </script>
 
 </body>
 
