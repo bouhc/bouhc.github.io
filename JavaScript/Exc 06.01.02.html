@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- <link rel="stylesheet" href="styles/style.css"> -->
+    <title>Πίνακες</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        "use strict"
+        let array = new Array(4);
+        for (let i = 0; i < array.length; i++) {
+            array[i] = new Array(3);
+            for (let j = 0; j < array[i].length; j++)
+                array[i][j] = i + j;
+        }
+        for (let i = 0; i < array.length; i++) {
+            let s = "";
+            for (let j = 0; j < array[i].length; j++)
+                s += array[i][j] + " ";
+            console.log(s);
+        }
+        
+        for (let i = 0; i < array.length; i++) {
+            let sum=0;            
+            for (let j = 0; j < array[i].length; j++)
+               sum+=array[i][j];
+            console.log(`Row: ${i}  Sum: ${sum}`);
+        }
+        for (let i = 0; i < array[i].length; i++) {
+            let sum=0;            
+            for (let j = 0; j < array.length; j++)
+               sum+=array[j][i];
+            console.log(`Row: ${i}  Sum: ${sum}`);
+        }
+    </script>
+
+</body>
+
+</html>
